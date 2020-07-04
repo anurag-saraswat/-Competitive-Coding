@@ -21,11 +21,17 @@ int getBit(int i, int num) {
 }
 
 int clearBit(int i, int num) {
-
-	return 0;
-
+	int mask = 1 << i;
+	mask = ~mask;
+	num = num & mask;
+	return num;
 }
 
+int updateBit(int i, int num, int val) {
+	num = clearBit(i , num);
+	val = val << i;
+	return num | val;
+}
 
 
 int main() {
@@ -39,23 +45,13 @@ int main() {
 	index = 3;
 	cout << getBit(index, num) << endl;
 
-	index = 3;
+	index = 4;
 	cout << clearBit(index, num) << endl;
 
-
-
+	num = 11;
+	index = 2;
+	int val = 1;
+	cout << updateBit(index, num, val) << endl;
 
 	return 0;
-}
-
-
-
-
-
-
-
-
-void updateBit() {
-	return ;
-
 }
