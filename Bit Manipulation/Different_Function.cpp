@@ -33,6 +33,14 @@ int updateBit(int i, int num, int val) {
 	return num | val;
 }
 
+int clearLastBits() {
+	return 0;
+}
+
+int clearRangeItoJ() {
+	return 0;
+}
+
 
 int main() {
 
@@ -52,6 +60,11 @@ int main() {
 	index = 2;
 	int val = 1;
 	cout << updateBit(index, num, val) << endl;
+
+	num = 127;
+	index = 2;
+	int val = 4;
+	cout << clearLastBits(index, num, val) << endl;
 
 	return 0;
 }
