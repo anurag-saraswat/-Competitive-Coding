@@ -33,12 +33,20 @@ int updateBit(int i, int num, int val) {
 	return num | val;
 }
 
-int clearLastBits() {
-	return 0;
+int clearLastBits(int index , int num) {
+	int mask = -1 << index;
+	return num & mask;
 }
 
-int clearRangeItoJ() {
-	return 0;
+int clearRangeItoJ(int i, int j , int num) {
+
+	int mask1 = -1 << (j);
+
+	int mask2 = (1 << (i - 1)) - 1; // 2^n -1 concept;
+
+	int mask = mask1 | mask2 ;
+
+	return num & mask;
 }
 
 
@@ -62,9 +70,13 @@ int main() {
 	cout << updateBit(index, num, val) << endl;
 
 	num = 127;
-	index = 2;
-	int val = 4;
-	cout << clearLastBits(index, num, val) << endl;
+	index = 4;
+	cout << clearLastBits(index, num) << endl;
+
+	num = 127;
+	int i = 3;
+	int j = 6;
+	cout << clearRangeItoJ(i, j, num) << endl;
 
 	return 0;
 }
