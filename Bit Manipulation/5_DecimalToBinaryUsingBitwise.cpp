@@ -21,7 +21,7 @@ int Decimal2Binary(int n) {
 
 int main() {
 
-	cout << Decimal2Binary(16) << endl;
+	cout << Decimal2Binary(1023) << endl;
 	return 0;
 
 }
