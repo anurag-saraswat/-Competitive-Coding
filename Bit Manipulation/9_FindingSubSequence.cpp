@@ -12,6 +12,22 @@
 using namespace std;
 
 
+void filterChar(char a[], int n) {
+
+	int i = 0;
+	while (n) {
+
+		if (n & 1) {
+			cout << a[i];
+		}
+
+		i++;
+		n = n >> 1;
+	}
+
+	cout << endl;
+
+}
 
 void substring(char a[]) {
 
@@ -19,8 +35,7 @@ void substring(char a[]) {
 
 	for (int i = 0; i < (1 << n); i++) {
 
-		cout << i << endl;
-
+		filterChar(a, i);
 	}
 }
 
