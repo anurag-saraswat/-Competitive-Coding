@@ -17,8 +17,6 @@ void multiply(int *a, int &digit , int num) {
 		carry = carry / 10;
 		digit++;
 	}
-
-
 }
 
 void large_Factorial(int num) {
@@ -38,12 +36,10 @@ void large_Factorial(int num) {
 	cout << endl;
 }
 
-
-
 int main() {
 
 	int num = 10;
 
-	large_Factorial(10000);
+	large_Factorial(50);
 	return 0 ;
 }
