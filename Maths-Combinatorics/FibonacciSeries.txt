@@ -1,0 +1,42 @@
+
+   Fibonacci Series | Some Usecases and Interesting Properties
+  -------------------------------------------------------------
+  f(n) = f(n-1) + f(n-2)
+
+  Sample Problems
+ -----------------
+
+ Q1. Find the number of boolean strings of length N, with no
+     consecutive one's.
+
+ Q2. Find number of ways to build a wall of size 2xN, with bricks
+     of size 1x2, and 2x1.
+
+
+  How to Compute
+ ----------------
+
+ - Recursion {Time : O(2^N)}
+ - Top-Down DP {Time:O(N) ,  Space:O(N)}  
+ - Bottom-Up DP {Time:O(N) ,  Space:O(N)} 
+ - DP with Space Optimisation(Three Variables) {Time:O(N) ,  Space:O(1)} 
+ - Matrix Exponentiation {Time: O(k^3 Log(N))  here k=3 so, O(Log(N))}
+ - Binet's Formula { Time:O(1) Approximating Fibinacci Series}
+ - Codefoces Hack { representing F(N) in terms of F(N/2) using matrix exponentiation Time: O(log(N))}
+
+  Intresting Properties 
+ -----------------------
+ 
+ Zeckendorf's Theorem: Each positive number can be written in a unique way as sum of one or more 
+  fibonacci number such some does not include any two consecutive numbers.
+
+  100 = 89 + 8 + 3
+  77 = 55 + 21 + 1 
+  17 = 13 + 3 + 1
+
+
+ Pisano Period: 
+   Last 1/2/3/4 digit(s) of fibonacci no repeat with period of 60/300/1500/15000 respectively. 
+
+
+

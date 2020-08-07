@@ -15,7 +15,7 @@ using namespace std;
 
 int main() {
 
-	int num = 4, expo = 3;
+	int num = 2 , expo = 3;
 
 	int last_bit , res = 1;
 

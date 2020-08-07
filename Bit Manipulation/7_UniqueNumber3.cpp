@@ -5,9 +5,9 @@
 
 /*  Steps:
 
-     1. Take a Count array which will reresent sum of set bits in all numbers at that position.
-     2. Traverse each no. bit wise and if bit is set then increment count value at tht position.
-     3. Take modulus of counut array with three.
+     1. Take a Count array which will represent sum of set bits in all numbers at that position.
+     2. Traverse each no. bit wise and if bit is set then increment count value at that position.
+     3. Take modulus of count array with three.
      4. Convert count array to decimal value which is answer.
 
 
