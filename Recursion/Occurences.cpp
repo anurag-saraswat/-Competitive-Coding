@@ -2,7 +2,6 @@
 using namespace std;
 
 
-
 int firstOccurence(int *arr, int n, int ele){
     
     //Base Cases
