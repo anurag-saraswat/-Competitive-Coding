@@ -15,13 +15,13 @@ int fastPower(int num, int pow){
     if(pow == 0)return 1;
 
     int ans = fastPower(num, pow/2);
-    ans = ans*num;
+    ans = ans*ans;
 
-    if(pow&1)ans = num*ans*ans;
-    else ans = ans*ans;
-	cout<<ans<<" ";
+    if(pow&1)return num*ans;
+    
 	return ans;
 }
+
 
 int main(){
 
