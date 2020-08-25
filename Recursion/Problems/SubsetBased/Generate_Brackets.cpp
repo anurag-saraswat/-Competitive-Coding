@@ -26,14 +26,10 @@ void generateBrackets(char *out, int n, int open, int closed, int indx) {
 
 int main() {
 
-	int num = 3;
+	int num = 4;
 	char out[200];
 
 	generateBrackets(out, num, 0, 0, 0);
-
-
-
-
 
 	return 0;
 }
